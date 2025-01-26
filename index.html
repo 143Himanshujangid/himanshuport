@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Himanshu Jangid - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-menu">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button id="mode-toggle" class="mode-toggle">
+            <i class="fas fa-sun"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="background-video" autoplay loop muted playsinline>
+            <source src="assets/background.mp4" type="video/mp4">
+        </video>
+        
+        <div class="hero-content">
+            <div class="glitch-container">
+                <h1 class="glitch" data-text="Hello, I'm">Hello, I'm</h1>
+                <h1 class="glitch highlight" data-text="Himanshu Jangid">Himanshu Jangid</h1>
+            </div>
+            <p class="animated-text">BCA Final Year Student at Career Point University Kota</p>
+            <div class="cta-buttons">
+                <a href="Himanshu-Jangid (2) (1) (1) (1).pdf" class="btn primary" download>Download Resume </a>
+                <a href="#contact" class="btn secondary" style="margin-top: 50px;">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Detail-oriented Data Analyst with expertise in data Analysis, and visualization. Proficient in SQL, Python, and Tableau. Skilled in transforming complex data into actionable insights to support business decisions. Strong problem-solving and communication skills, with a focus on driving data-driven strategies for optimized performance and growth.</p>
+                    <p>I am a dedicated and passionate web developer with a strong enthusiasm for crafting engaging and dynamic digital experiences. My journey into web development began with a fascination for technology and a desire to create meaningful solutions that enhance user interactions on the web.</p>
+                </div>
+                <div class="about-image">
+<img src="1729194440414.jpg" alt="Himanshu Jangid" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-php"></i>
+                        <span>PHP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Data Analysis</h3>
+                <div class="skill-items">
+                    <div class="skill-item" data-tilt>
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Tableau</span>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fas fa-chart-line"></i>
+                        <span>Power BI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <h2 class="section-title">Certificates</h2>
+<div class="certificates-grid">
+            <div class="certificate-card" data-tilt>
+                <div class="certificate-content">
+                    <img src="Screenshot 2025-01-16 230610.png" alt="Certificate Image" class="certificate-img">
+                    <h3>Internship Certificate</h3>
+                    <p>Grras Solution Jaipur</p>
+                    <a href="#" class="btn primary">View Certificate</a>
+                </div>
+            </div>
+            <div class="certificate-card" data-tilt>
+                <div class="certificate-content">
+                    <img src="CamScanner 01-26-2025 15.25_1.jpg" alt="Certificate Image" class="certificate-img">
+                    <h3>Hacking WorkShop </h3>
+                    <p>Career Point University</p>
+                    <a href="#" class="btn primary">View Certificate</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+<div class="project-card" data-tilt>
+                <img src="OIP (1).jpeg" alt="Cryptocurrency Data Analysis">
+                <div class="project-content">
+                    <h3>Cryptocurrency Data Analysis</h3>
+                    <p>Login credentials:<br>Username: hi<br>Password: hi123</p>
+                    <div class="project-links">
+                        <a href="https://crryptocurrency-dcjbxokhx9mxhznzhqjsbs.streamlit.app/" target="_blank" class="btn primary">View Project</a>
+                        <a href="https://github.com/143Himanshujangid/crryptocurrency" target="_blank" class="btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                    </div>
+                </div>
+           
+            
+
+<div class="project-card" data-tilt>
+                <img src="Screenshot 2025-01-17 004922.png" alt="E-commerce Clone">
+                <div class="project-content">
+                    <h3>E-commerce Clone</h3>
+                    <p>A full-featured e-commerce website clone</p>
+                    <div class="project-links">
+                        <a href="https://github.com/143Himanshujangid/e-commerce" target="_blank" class="btn primary">View Project</a>
+                        <a href="https://github.com/143Himanshujangid/e-commerce" target="_blank" class="btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+<div class="project-card" data-tilt>
+                <img src="images.jpeg" alt="Starbucks Data Analysis">
+                <div class="project-content">
+                    <h3>Starbucks Data Analysis</h3>
+                    <p>Data analysis project for Starbucks</p>
+                    <div class="project-links">
+                        <a href="https://supermart-data-anlaysis-6yw9csomu3rqgpecba7y3l.streamlit.app/" target="_blank" class="btn primary">View Project</a>
+                        <a href="https://github.com/143Himanshujangid/supermart-data-anlaysis" target="_blank" class="btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:himanshujangid287@gmail.com">himanshujangid287@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+919782203052">+91 9782203052</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/143himanshujangid" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/himanshu-jangid" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/himanshujangid287" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" required>
+                    <label>Name</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" required>
+                    <label>Email</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <textarea required></textarea>
+                    <label>Message</label>
+                    <span class="focus-border"></span>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Himanshu Jangid. All rights reserved.</p>
+    </footer>
+
+    <script src="three-background.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
